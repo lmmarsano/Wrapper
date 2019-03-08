@@ -1,0 +1,14 @@
+version 5.198.0
+storage none
+source https://api.nuget.org/v3/index.json
+framework auto-detect
+nuget FSharp.Core
+// [ FAKE GROUP ]
+group Build
+    framework auto-detect
+    source https://api.nuget.org/v3/index.json
+    nuget NETStandard.Library
+    nuget Fake.DotNet
+    nuget Fake.DotNet.Cli
+    nuget Fake.IO.FileSystem
+    nuget Fake.Core.Target
